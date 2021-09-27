@@ -1,6 +1,6 @@
 public class MostTimes {
 
-    public static int most_times(int[] A, int n){
+    public int most_times(int[] A, int n){
     // Input: Array A storing n  integer values
     // Output: The value that appears the largest number of times in $A$. If several values appear
     //         in $A$ the largest number of times, the algorithm must return the smalles among these
@@ -13,7 +13,7 @@ public class MostTimes {
 		// create an integer variable to count the appearances of each element in the array
         int count = 0;
 
-        // 
+        // this for loop loops through the array to count the occurences of each element and store them in temp
         for (int i = 0; i < n; i++) {
         	
         	int curr = A[i];
@@ -30,16 +30,21 @@ public class MostTimes {
         			
         }
         
+		// declare a variable to store the highest count of occurence
         int max = 0;
         
+		// for loop to loop through temp to get the max
         for (int j = 0; j < n; j++) {
         	if (temp[j] > max) {
         		max = temp[j];
         	}
         }
         
+		// int variable to store the index of the most repeated number
         int index = A[0];
         
+		// we use a for loop to loop through the temp array comparing the element with the max, if it is the max we store it in the index by referencing where it is in the original array A, 
+		// if there exists a tie in count, we want to compare the elements in array A and store the smallest one (in the if statements)
         for (int k = 0; k < n; k++) {
         	if (temp[k] == max) {
         		if (index > A[k])
@@ -47,20 +52,21 @@ public class MostTimes {
         	}
         }
         
+		// return index which is the smallest most repeated number in array A
         return index;
     }
     
-    
-    public static void main(String[] args) {
+	
+	// this is the main method where I test my program to see if it returns the correct output
+	public static void main(String[] args) {
 
+		MostTimes most = new MostTimes();
 
-		
-    	
-    	int array[] = {5, 1, 2, 3, 5, 20, 36, 78, 20, 300}; // returns 5
-    	
+		int A[] = {5, 1, 2, 3, 5, 20, 36, 78, 20, 300}; // returns 5
+	
     	// 12 1 2 3 7 12 3 56 12 224 448 --> returns  12
     	
-    	System.out.println(most_times(array, array.length));
+    	System.out.println("\n" + most.most_times(A, A.length) + "\n");
     }
     
     
