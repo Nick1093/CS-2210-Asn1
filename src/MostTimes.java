@@ -74,9 +74,5 @@ public class MostTimes {
     	
     	System.out.println("\n" + answer.most_times(A, A.length) + "\n");
     }
-    
-    
-    
-    
-    
+
 }
