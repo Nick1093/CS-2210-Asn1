@@ -70,7 +70,7 @@ public class MostTimes {
 
 		int A[] = {5, 1, 2, 3, 5, 20, 36, 78, 20, 300}; // returns 5
 	
-    	// 12 1 2 3 7 12 3 56 12 224 448 --> returns  12
+    		// 12 1 2 3 7 12 3 56 12 224 448 --> returns  12
     	
     	System.out.println("\n" + answer.most_times(A, A.length) + "\n");
     }
