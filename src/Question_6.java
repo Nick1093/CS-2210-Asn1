@@ -13,7 +13,7 @@ public class Question_6 {
 	return -1
 	*/
 	
-	public static int search(int[] L, int n, int x) {
+	public int search(int[] L, int n, int x) {
 		
 		int i = 0;
 		int j = 0;
@@ -39,11 +39,15 @@ public class Question_6 {
 	}
 	
 	public static void main(String[] args) {
+
+		Question_6 q6 = new Question_6();
+
 		int[] L = {4, 5, 6, 7, 8, 9};
+
 		int x = 9;
 		int y = L.length;
 		
-		System.out.println(search(L, y, x));
+		System.out.println(q6.search(L, y, x));
 	}
 
 }
