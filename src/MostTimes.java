@@ -13,6 +13,12 @@ public class MostTimes {
 		// create an integer variable to count the appearances of each element in the array
         int count = 0;
 
+		// for the sake of this if this, if the length of the input array is 0 we will return -1
+		if (A.length == 0) {
+			return -1;
+		}
+		
+
         // this for loop loops through the array to count the occurences of each element and store them in temp
         for (int i = 0; i < n; i++) {
         	
