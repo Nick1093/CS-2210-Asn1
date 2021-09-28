@@ -17,6 +17,10 @@ public class Question_6 {
 		
 		int i = 0;
 		int j = 0;
+
+		if (L.length == 0) {
+			return -1;
+		}
 		
 		while (i < n) {
 			// the while loop will stop when i is 5 which is the size of array - 1
