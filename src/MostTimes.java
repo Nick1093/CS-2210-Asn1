@@ -60,13 +60,13 @@ public class MostTimes {
 	// this is the main method where I test my program to see if it returns the correct output
 	public static void main(String[] args) {
 
-		MostTimes most = new MostTimes();
+		MostTimes answer = new MostTimes();
 
 		int A[] = {5, 1, 2, 3, 5, 20, 36, 78, 20, 300}; // returns 5
 	
     	// 12 1 2 3 7 12 3 56 12 224 448 --> returns  12
     	
-    	System.out.println("\n" + most.most_times(A, A.length) + "\n");
+    	System.out.println("\n" + answer.most_times(A, A.length) + "\n");
     }
     
     
